@@ -209,7 +209,7 @@ body.dark-theme {
   box-shadow: 0 0 4px hsla(190, 64%, 15%, 0.15);
 }
 .scroll-header .nav__logo, .scroll-header .nav__toggle {
-  color: var(--text-color-light);
+  color: var(--text-color-light) !important;
 }
 
 /*End of header*/
