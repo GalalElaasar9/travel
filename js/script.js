@@ -29,10 +29,8 @@ $(document).ready(function(){
     var Wscroll = $(window).scrollTop();
     if(Wscroll > 100){
       $(".header").css("backgroundColor","#fff");
-      $(".nav_logo, .nav_toggle").css("color", "#11414b")
     }else{
       $(".header").css("backgroundColor","transparent");
-      $(".nav_logo, .nav_toggle").css("color", "#fff")
     }
   });
 });

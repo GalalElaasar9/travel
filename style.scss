@@ -195,10 +195,10 @@ body.dark-theme{
 .scroll-header{
   background-color: var(--body-color) !important;
   box-shadow: 0 0 4px hsla(190, 64%, 15%, .15);
-
+  // color: var(--text-color);
   & .nav__logo,
   & .nav__toggle{
-    color: var(--text-color-light) !important;
+    color: var(--text-color) !important;
   }
 }
 /*End of header*/
