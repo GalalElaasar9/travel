@@ -14,8 +14,8 @@
   --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 75%);
   /*================Font and typagraphy=============*/
-  --body-font: "Open Sans", sans-serif;
-  --title-font: "Raleway", sans-serif;
+  --body-font: 'Open Sans', sans-serif;
+  --title-font: 'Raleway', sans-serif;
   --biggest-font-size: 2.5rem;
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
@@ -205,11 +205,11 @@ body.dark-theme {
 }
 
 .scroll-header {
-  background-color: var(--body-color);
+  background-color: var(--body-color) !important;
   box-shadow: 0 0 4px hsla(190, 64%, 15%, 0.15);
 }
 .scroll-header .nav__logo, .scroll-header .nav__toggle {
-  color: var(--title-color);
+  color: var(--text-color-light);
 }
 
 /*End of header*/
