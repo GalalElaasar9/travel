@@ -14,32 +14,23 @@ $(document).ready(function(){
     navMenu.removeClass('active')
     });
 });
-// const navLink = document.querySelectorAll('.nav_link')
 
-// function linkAction(){
-//     const navMenu = document.getElementById('nav_menu')
-//     // when we click on each nav_link, we remove the show-menu class 
-//     navMenu.classList.remove('active')
-// }
-// navLink.forEach(n => n.addEventListener('click', linkAction));
-
-
-$(document).ready(function(){
-  $(window).scroll(function(){
-    var Wscroll = $(window).scrollTop();
-    if(Wscroll > 100){
-      $(".header").css("backgroundColor","#fff");
-    }else{
-      $(".header").css("backgroundColor","transparent");
-    }
-  });
-});
 /*==================== CHANGE BACKGROUND HEADER ====================*/
+let navLogo = document.querySelector('.nav_logo')
+let navToggle = document.querySelector('.nav_toggle')
 function scrollHeader(){
   const header = document.getElementById('header')
   // When the scroll is greater than 100 viewport height, add the scroll-header class to the header tag
-  if(this.scrollY >= 100) header.classList.add('scroll-header'); else header.classList.remove('scroll-header')
-}
+  if(this.scrollY >= 100){
+    header.classList.add('scroll-header');
+    navLogo.classList.add('active');
+    navToggle.classList.add('active');
+  }else{
+    header.classList.remove('scroll-header')
+    navLogo.classList.remove('active');
+    navToggle.classList.remove('active');
+  }
+} 
 window.addEventListener('scroll', scrollHeader)
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 const sections = document.querySelectorAll('section[id]')
@@ -62,10 +53,6 @@ function scrollActive(){
 window.addEventListener('scroll', scrollActive)
 
 /*==================== SCROLL REVEAL ANIMATION ====================*/
-
-
-
-
 var swiper = new Swiper(".discover_container", {
   effect: "coverflow",
   grabCursor: true,

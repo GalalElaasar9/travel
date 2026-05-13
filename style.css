@@ -221,6 +221,10 @@ body.dark-theme {
   align-items: center;
 }
 
+.nav_logo.active,
+.nav_toggle.active {
+  color: var(--text-color) !important;
+}
 .nav_logo,
 .nav_toggle {
   color: var(--white-color);

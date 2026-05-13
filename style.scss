@@ -198,6 +198,7 @@ body.dark-theme{
   // color: var(--text-color);
   & .nav__logo,
   & .nav__toggle{
+    
     color: var(--text-color) !important;
   }
 }
@@ -211,6 +212,9 @@ body.dark-theme{
 }
 .nav_logo ,
 .nav_toggle{
+  &.active{
+    color: var(--text-color) !important;
+  }
   color: var(--white-color);
 }
 .nav_logo{
